@@ -28,7 +28,10 @@
 	        <div class="navbar-nav mr-auto">
             {% if user.is_authenticated %}
 	                 <a class="nav-item nav-link" href="{% url 'blog-home'  %}">Home</a>
-	                 <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+                   <a class="nave-item nav-link" href="/noticeboard">Notice Board</a>
+                   <a class="nave-item nav-link" href="/study">Study Zone</a>
+                   <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+
             {% else %}
                    <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
             {% endif %}

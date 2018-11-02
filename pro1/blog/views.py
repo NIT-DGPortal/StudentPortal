@@ -28,6 +28,10 @@ context = {
 def home(request):
 	return render(request,'blog/home.html',context)
 
+@login_required(redirect_field_name='')
+def noticeb(request):
+	return render(request,'blog/notice.html',context)
+
 
 def about(request):
 	return render(request,'blog/about.html',context)

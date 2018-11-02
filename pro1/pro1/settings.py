@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'study.apps.StudyConfig',
+    'noticeboard.apps.NoticeboardConfig',
     'users.apps.UsersConfig',
     'crispy_forms', # defaults to bootstrap2 --> make it bootstrap4  see line 127
     'blog.apps.BlogConfig',
