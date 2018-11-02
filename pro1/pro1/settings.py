@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -124,8 +123,11 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL = '/media/' # how we access in the browser
 CRISPY_TEMPLATE_PACK = 'bootstrap4'    # bootstrap changed
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGOUT_REDIRECT_URL = 'login'
-LOGIN_URL = 'login' 
+LOGIN_URL = 'login'

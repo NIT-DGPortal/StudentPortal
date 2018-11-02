@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.shortcuts import redirect
 from .forms import UserRegisterForm
-from django.contrib.auth.decorators import login_required 
+from django.contrib.auth.decorators import login_required
 
 def register(request):
 	if request.method == 'POST':   ## data sent do further things ie validation checks
