@@ -6,14 +6,7 @@
 			{%  csrf_token %}
 			<fieldset class="form-group">
 				<legend class="border-bottom mb-4"> Welcome to the System</legend>
-				<p> Hello there, here are some general instructions to get you started:</p>
-				<ul>
-					<li> Login to gain access to the system</li>
-					<li> If you do not have an account click on Sign Up below</li>
-					<li> You are only permitted to register using your <b>Institute email address</b></li>
-				</ul>
-
-				{{ form|crispy }}
+				{{ form|crispy }}  
 			</fieldset>
 			<div class="form-group">
 				<button class="btn btn-outline-info" type="submit"> Log In </button>

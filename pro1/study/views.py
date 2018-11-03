@@ -30,6 +30,10 @@ def bt(request):
 	return render(request,'study/bt.html')
 
 @login_required(redirect_field_name='')
+def it(request):
+	return render(request,'study/it.html')
+
+@login_required(redirect_field_name='')
 def ce(request):
 	return render(request,'study/ce.html')
 

@@ -4,7 +4,30 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
+posts = [  # list of dictionaries
+	{
+		'author' : 'MonsijBiswal',
+		'title' : 'Initial Post',
+		'content' : 'The first notice',
+		'date_posted' : 'October 29, 2018'
+	},
+
+	{
+		'author' : 'MonsijBiswal',
+		'title' : 'Second Post',
+		'content' : 'An important notice',
+		'date_posted' : 'October 30, 2028'
+	},
+]
+
+context = {
+		'posts' : posts
+}
+
+
+
+
 @login_required(redirect_field_name='')
 def home(request):
-	return render(request,'noticeboard/home.html')
+	return render(request,'noticeboard/home.html',context)
     #return HttpResponse('<p> Hello </p>')

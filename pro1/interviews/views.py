@@ -4,14 +4,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
-
-
 @login_required(redirect_field_name='')
 def home(request):
-	return render(request,'blog/home.html')
-
-def contact(request):
-	return render(request,'blog/contact.html')
-
-def about(request):
-	return render(request,'blog/about.html')
+	return render(request,'interviews/home.html')
+    #return HttpResponse('<p> Hello </p>')

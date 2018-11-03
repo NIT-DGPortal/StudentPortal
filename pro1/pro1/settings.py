@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'interviews.apps.InterviewsConfig',
     'study.apps.StudyConfig',
     'noticeboard.apps.NoticeboardConfig',
     'users.apps.UsersConfig',
@@ -133,3 +134,12 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'    # bootstrap changed
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGOUT_REDIRECT_URL = 'login'
 LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_USER = 'monsijbiswal051998@gmail.com'
+EMAIL_HOST_PASSWORD = 'moon19981961'
