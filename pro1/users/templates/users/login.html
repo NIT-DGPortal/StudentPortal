@@ -6,11 +6,13 @@
 			{%  csrf_token %}
 			<fieldset class="form-group">
 				<legend class="border-bottom mb-4"> Welcome to the System</legend>
-				{{ form|crispy }}  
+				{{ form|crispy }}
 			</fieldset>
 			<div class="form-group">
 				<button class="btn btn-outline-info" type="submit"> Log In </button>
-
+				<small class="text-muted ml-2">
+								<a href="{% url 'password_reset' %}">Forgot Password</a>
+				</small>
 			</div>
 		</form>
 		<div class="border-top pt-3">
