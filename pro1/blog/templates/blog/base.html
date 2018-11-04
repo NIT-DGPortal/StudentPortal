@@ -20,12 +20,11 @@
 	<header class="site-header">
 	  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
 	    <div class="container">
-	      <a class="navbar-brand mr-4" href="{% url 'blog-home'  %}">Portal</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	      </button>
 	      <div class="collapse navbar-collapse" id="navbarToggle">
-	        <div class="navbar-nav mr-auto">
+	        <div class="navbar navbar-default navbar-left">
             {% if user.is_authenticated %}
 	                 <a class="nav-item nav-link" href="{% url 'blog-home'  %}">Home</a>
                    <a class="nave-item nav-link" href="{% url 'notice-home' %}">Notice Board</a>
@@ -38,7 +37,7 @@
             {% endif %}
 	        </div>
 	        <!-- Navbar Right Side -->
-	        <div class="navbar-nav">
+	        <div class="navbar navbar-default navbar-right">
 	        	{% if user.is_authenticated %}
 	        	<a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
 	        	  <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
@@ -85,6 +84,19 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Footer -->
+      <div class="navbar navbar-default navbar-fixed-bottom">
+          <div class="container">
+            <p class="navbar-text pull-left">Crafted with <span class="glyphicon glyphicon-heart"></span> by <a href="https://github.com/r3trd">r3trd</a> & <a href="https://github.com/monsij">monsij</a></p>
+            <a href="https://github.com/NIT-DGPortal/portal-main" class="navbar-btn btn-danger btn pull-right">
+            <span class="glyphicon glyphicon-star"></span>  Give us a star on Github</a>
+          </div>
 
+
+    </div>
+    <!-- Footer -->
 </body>
 </html>

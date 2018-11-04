@@ -82,3 +82,15 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+footer.page-footer {
+  bottom: 0;
+  color: #fff; }
+footer.page-footer .container-fluid {
+  width: auto; }
+footer.page-footer .footer-copyright {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.6); }
+footer.page-footer a {
+  color: #fff; }

@@ -2,4 +2,6 @@
 {% load crispy_forms_tags %}
 {% block content %}
 	<h1>{{ user.username }} </h1>
+	<h2>{{ user.email }} </h2>
+	<h3>{{ user.first_name }} {{ user.last_name }}</h3>
 {% endblock %}
