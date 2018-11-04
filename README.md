@@ -68,5 +68,5 @@ Exactly putting we want it to be simple are permissive. Interested contributors 
 * This was made in just a span of 27 hours,yes it was that short :sparkles:
 * Authentication and Profile credits to [Satyajit Das](https://github.com/r3trd)
 * CSS,Bootstrap Rendering realised by [Anoop Kumar](https://github.com/anoop1311)
-* General codebase,framework by [Monsij Biswal](https://github.com/monsij)
+* General codebase and framework by [Monsij Biswal](https://github.com/monsij)
 
