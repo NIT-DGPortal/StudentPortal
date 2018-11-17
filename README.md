@@ -60,12 +60,16 @@
   ```
   
 * Navigate to http://localhost:8000 to see it in action.
+
+## Contribution
+
+Head to [How-to-Contribute](https://github.com/monsij/StudentPortal/wiki/How-To-Contribute) for it.
 ## License
 
 Exactly putting we want it to be simple are permissive. Interested contributors are heartedly welcomed. :blush: 
 ## Credits
 
-* This was made in just a span of 27 hours,yes it was that short :sparkles:
+* The initial version was made in just a span of 27 hours,yes it was that short :sparkles:
 * Authentication and Profile credits to [Satyajit Das](https://github.com/r3trd)
 * CSS,Bootstrap Rendering realised by [Anoop Kumar](https://github.com/anoop1311)
 * General codebase and framework by [Monsij Biswal](https://github.com/monsij)
