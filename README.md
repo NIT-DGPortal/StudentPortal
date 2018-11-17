@@ -61,6 +61,16 @@
   
 * Navigate to http://localhost:8000 to see it in action.
 
+
+## Screenshots
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P1.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P2.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P3.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P4.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P5.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P6.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P7.PNG" alt="Gitter">
+
 ## Contribution
 
 Head to [How-to-Contribute](https://github.com/monsij/StudentPortal/wiki/How-To-Contribute) for it.
