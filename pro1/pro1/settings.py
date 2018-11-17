@@ -33,7 +33,6 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'interviews.apps.InterviewsConfig',
     'study.apps.StudyConfig',
-    'noticeboard.apps.NoticeboardConfig',
     'users.apps.UsersConfig',
     'crispy_forms', # defaults to bootstrap2 --> make it bootstrap4  see line 127
     'blog.apps.BlogConfig',
@@ -129,7 +128,7 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/' # how we access in the browser
-CRISPY_TEMPLATE_PACK = 'bootstrap4'    # bootstrap changed
+CRISPY_TEMPLATE_PACK = 'bootstrp4'    # bootstrap changed
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGOUT_REDIRECT_URL = 'login'
@@ -139,7 +138,7 @@ LOGOUT_URL = 'logout'
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_USE_TLS = False
 
 EMAIL_HOST_USER = os.getenv('EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASS')
