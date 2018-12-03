@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/' # how we access in the browser
-CRISPY_TEMPLATE_PACK = 'bootstrp4'    # bootstrap changed
+CRISPY_TEMPLATE_PACK = 'bootstrap4'    # bootstrap changed
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGOUT_REDIRECT_URL = 'login'
