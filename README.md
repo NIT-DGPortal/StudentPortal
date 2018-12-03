@@ -14,7 +14,8 @@
   <a href="#KWoC">KWoC</a> •
 </p>
 
-
+## KWoC
+We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc.kossiitkgp.org/). If you're contributing as a part of this program, we will be having a special mention of such contributors in the repo. Once again, Happy coding
 ## Key Features
 <ul>
   <li> Based on Python</li>
