@@ -16,6 +16,15 @@
   <a href="#KWoC">KWoC</a> •
 </p>
 
+
+[![Report](https://img.shields.io/badge/status-pre--release-green.svg)]()
+[![License](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/monsij/StudentPortal/)
+[![django1.10](https://img.shields.io/badge/django-2.0-brightgreen.svg)](https://www.djangoproject.com)
+[![Maintainability](https://api.codeclimate.com/v1/badges/dc8e2c31895c72594f4c/maintainability)](https://codeclimate.com/github/monsij/StudentPortal/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/dc8e2c31895c72594f4c/test_coverage)](https://codeclimate.com/github/monsij/StudentPortal/test_coverage)
+[![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)]
+[![Gitter](https://img.shields.io/gitter/room/NIT-DGPortal/Lobby.svg?style=flat-square)](https://gitter.im/NIT-DGPortal-main/Lobby)
+[![HitCount](http://hits.dwyl.com/monsij/StudentPortal.svg)](http://hits.dwyl.com/monsij/StudentPortal)
 ## KWoC
 We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc.kossiitkgp.org/). If you're contributing as a part of this program, we will be having a special mention of such contributors in the repo. Once again, Happy coding
 ## Key Features
