@@ -6,10 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+	<!-- Tab icon -->
+	<link rel="SHORTCUT ICON" href="{% static 'blog/images/dgpicon.png' %}" type="image/png" />
+
+    <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/main.css' %}">
 	{% if title %}
 		<title> {{ post.title}}</title>
 	{% else %}
@@ -26,7 +29,7 @@
 	      <div class="collapse navbar-collapse" id="navbarToggle">
 	        <div class="navbar navbar-default navbar-left">
             {% if user.is_authenticated %}
-	                 <a class="nav-item nav-link" href="{% url 'blog-home'  %}">Home</a>
+                   <a class="nav-item nav-link" href="{% url 'blog-home'  %}">Home</a>
                    <a class="nave-item nav-link" href="{% url 'notice-home' %}">Notice Board</a>
                    <a class="nave-item nav-link" href="/study">Study Zone</a>
                    <a class="nave-item nav-link" href="/interviews">Placement/Internships</a>
@@ -39,7 +42,7 @@
 	        <!-- Navbar Right Side -->
 	        <div class="navbar navbar-default navbar-right">
 	        	{% if user.is_authenticated %}
-	        	<a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
+                  <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
 	        	  <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
 	        	{% else %}
 		          <a class="nav-item nav-link" href="{% url 'login'%}">Login</a>
