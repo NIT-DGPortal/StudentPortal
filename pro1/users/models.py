@@ -8,7 +8,7 @@ class Profile(models.Model):
     email_confirmed = models.BooleanField(default=False)
 
     def __str__(self):
-        return f'{self.user.username} Profile'
+        return self.user.username
 
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
