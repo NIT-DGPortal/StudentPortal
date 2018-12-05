@@ -15,3 +15,6 @@ def contact(request):
 
 def about(request):
 	return render(request,'blog/about.html')
+
+def contributor(request):
+	return render(request, 'blog/contributor.html')
