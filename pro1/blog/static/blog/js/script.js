@@ -26,5 +26,3 @@ $(document).ready(function(){
       } // End if
     });
   })
-
-//Sidebar weather widget
