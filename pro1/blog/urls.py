@@ -7,6 +7,7 @@ urlpatterns = [
 	path('about/',views.about, name='blog-about'),
 	path('home/', views.home, name='blog-home'),
 	path('contact/',views.contact, name='blog-contact'),
+	path('contributors/', views.contributor, name='blog-contributor'),
 	path('noticeboard/', include('noticeboard.urls')),
 	path('study/',include('study.urls')),
 	path('interviews/',include('interviews.urls')),

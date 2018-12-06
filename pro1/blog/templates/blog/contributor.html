@@ -1,0 +1,30 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+	<h1> Contributors </h1>
+	<br>
+	<article class="display-left">
+		<div class="media-body">
+			<img class="img-circle" src="{% static 'blog/images/monsij.jpeg' %}">
+			<h2><a class="article-title" href="https://github.com/monsij">monsij</a></h2>
+		</div>
+	</article>
+	<article class="display-right">
+		<div class="media-body">
+			<img class="img-circle" src="{% static 'blog/images/harry-hov.jpeg' %}">
+			<h2><a class="article-title" href="https://github.com/harry-hov">harry-hov</a></h2>
+		</div>
+	</article>
+	<article class="display-left">
+		<div class="media-body">
+			<img class="img-circle" src="{% static 'blog/images/r3trd.jpeg' %}">
+			<h2><a class="article-title" href="https://github.com/r3trd">r3trd</a></h2>
+		</div>
+	</article>
+	<article class="display-right">
+		<div class="media-body">
+			<img class="img-circle" src="{% static 'blog/images/gutsytechster.jpeg' %}">
+			<h2><a class="article-title" href="https://github.com/gutsytechster">gutsytechster</a></h2>
+		</div>
+	</article>
+{% endblock content %}
