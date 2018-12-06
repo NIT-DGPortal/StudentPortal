@@ -23,10 +23,7 @@ def register(request):
 		if form.is_valid():
 			user = form.save(commit=False)
 			user.is_active = False
-			#user.Profile.email_confirmed = False
 			user.save()
-			#player, created = UserProfile.objects.get_or_create(user=request.user)
-			#user.profile = User.objects.create(user=request.user)
 			current_site = get_current_site(request)
 			subject = 'Activate your account!'
 			message = render_to_string('users/activation.html', {
@@ -35,7 +32,6 @@ def register(request):
 				'uid' : urlsafe_base64_encode(force_bytes(user.pk)).decode(),
 				'token' : account_activation_token.make_token(user),
 			})
-			#user.email_user(subject, message)
 			send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [user.email])
 			return redirect('mail_sent')
 	else:
@@ -50,7 +46,6 @@ def mail_sent(request):
 def activate(request, uidb64, token):
 	try:
 		uid = force_text(urlsafe_base64_decode(uidb64))
-		#print(uid)
 		user = User.objects.get(pk=uid)
 	except(TypeError, ValueError, OverflowError, User.DoesNotExist):
 		user = None
