@@ -6,13 +6,16 @@
   <h4 align="center">An Django based web-app exclusively for NIT Durgapur</h4>
 </p>
 <p align="center">
+  •
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#license">License</a> •
   <a href="#credits">Credits</a> •
+  <a href="#KWoC">KWoC</a> •
 </p>
 
-
+## KWoC
+We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc.kossiitkgp.org/). If you're contributing as a part of this program, we will be having a special mention of such contributors in the repo. Once again, Happy coding
 ## Key Features
 <ul>
   <li> Based on Python</li>
@@ -60,6 +63,16 @@
   ```
   
 * Navigate to http://localhost:8000 to see it in action.
+
+
+## Screenshots
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P1.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P2.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P3.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P4.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P5.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P6.PNG" alt="Gitter">
+<img src="https://github.com/monsij/StudentPortal/blob/master/screenshots/P7.PNG" alt="Gitter">
 
 ## Contribution
 

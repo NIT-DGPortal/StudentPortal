@@ -30,4 +30,3 @@ context = {
 @login_required(redirect_field_name='')
 def home(request):
 	return render(request,'noticeboard/home.html',context)
-    #return HttpResponse('<p> Hello </p>')
