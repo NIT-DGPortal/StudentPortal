@@ -7,7 +7,6 @@ from django.contrib.auth.decorators import login_required
 @login_required(redirect_field_name='')
 def home(request):
 	return render(request,'study/home.html')
-    #return HttpResponse('<p> Hello </p>')
 
 @login_required(redirect_field_name='')
 def year_1_doc(request):
