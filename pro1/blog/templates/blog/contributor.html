@@ -1,6 +1,13 @@
 {% extends "blog/base.html" %}
 {% load static %}
 {% block content %}
+<head>
+	{% if title %}
+		<title>{{ post.title }}</title>
+	{% else %}
+		<title>StudentPortal:Contributors</title>
+	{% endif %}
+</head>
 	<h1> Contributors </h1>
 	<br>
 	<style>

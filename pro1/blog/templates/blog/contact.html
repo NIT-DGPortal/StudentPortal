@@ -1,5 +1,12 @@
 {% extends "blog/base.html" %}
 {% block content %}
+<head>
+	{% if title %}
+		<title>{{ post.title }}</title>
+	{% else %}
+		<title>StudentPortal:Contacts</title>
+	{% endif %}
+</head>
 	<h1> Contacts </h1>
 	<article class="media content-section">
 		<div class="media-body">
