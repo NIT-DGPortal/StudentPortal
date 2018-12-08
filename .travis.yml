@@ -11,4 +11,7 @@ cache:
 install:
   - pip3 install -r pro1/requirements.txt
 script:
-  - python3 pro1/manage.py 
+  - python3 pro1/manage.py
+  
+after_success:
+  - codecov
