@@ -1,5 +1,12 @@
 {% extends "blog/base.html" %}
 {% block content %}
+<head>
+  {% if title %}
+    <title>{{ post.title }}</title>
+  {% else %}
+    <title>StudentPortal:StudyZone</title>
+  {% endif %}
+</head>
   <h1> Departments </h1>
   <ul>
       <li> <a href = "year_1/">First Year</a></li>

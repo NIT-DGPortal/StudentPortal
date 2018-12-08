@@ -1,5 +1,12 @@
 {% extends "blog/base.html" %}
 {% block content %}
+<head>
+	{% if title %}
+		<title>{{ post.title }}</title>
+	{% else %}
+		<title>StudentPortal:About</title>
+	{% endif %}
+</head>
 	<h1> Description</h1>
 	<p> This portal is meant for students of NIT Durgapur for keeping up-to-date information about academics, placements, internships and all other major updates</p>
 
