@@ -72,14 +72,14 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
   > pipenv shell
   ```
 
- Now install all requisites in requirements.txt .
+  Now install all requisites in requirements.txt .
 
   ```bash
   pip install x
   ```
- where x is everything inside requirements.txt
+  where x is everything inside requirements.txt
 
- Here is what your Pipfile will appear when you're ready to go
+  Here is what your Pipfile will appear when you're ready to go
 
   ```bash
   django = "*"
@@ -93,8 +93,8 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
 
 * Configure environment variable using **python-decople**
 
-Create a file named .env in project's root directory (i.e. inside pro1, where .env.example reside)
-and copy the content from .env.example file and paste it in .env file.
+  Create a file named .env in project's root directory (i.e. inside pro1, where .env.example reside)
+  and copy the content from .env.example file and paste it in .env file.
 
 * Navigate to pro1 and run the following command in your terminal.
 
