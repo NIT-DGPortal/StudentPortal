@@ -72,14 +72,14 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
   > pipenv shell
   ```
 
-Now install all requisites in requirements.txt .
+ Now install all requisites in requirements.txt .
 
   ```bash
   pip install x
   ```
-where x is everything inside requirements.txt
+ where x is everything inside requirements.txt
 
-Here is what your Pipfile will appear when you're ready to go
+ Here is what your Pipfile will appear when you're ready to go
 
   ```bash
   django = "*"
@@ -88,6 +88,7 @@ Here is what your Pipfile will appear when you're ready to go
   django-crispy-forms = "*"
   django-registration = "*"
   requests = "*"
+  ```
   
 
 * Configure environment variable using **python-decople**
