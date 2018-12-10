@@ -39,18 +39,45 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
   
 ## How to Use
 
-* Start off by cloning this repository into your local directory.
-  
+* Start off by forking this repository and cloning it to get your local copy.
+
   ```bash
   > git clone https://github.com/NIT-DGPortal/portal-main.git 
   ```
 
-* If you prefer virtual-environment ([pipenv](https://pipenv.readthedocs.io/) suggested) get yourself these packages in it. 
-  Initiate a python 3 environment
+* If you prefer a virtual-environment ([pipenv](https://pipenv.readthedocs.io/) suggested) you should have pip and pipenv installed.
+
+  ```bash
+  > sudo apt install python3-pip python3-dev
+    pip3 install --user pipenv 
+  ```
+  
+  Add pipenv to PATH
+  
+  ```bash
+  echo "PATH=$HOME/.local/bin:$PATH" >> ~/.bashrc
+  source ~/.bashrc
+  ```
+
+* Navigate to your local directory and initiate a python 3 environment.
   
   ```bash
   > pipenv --three 
   ```
+  
+  
+* Activate your virtual environment.
+  
+  ```bash
+  > pipenv shell
+  ```
+
+  Now install all requisites in requirements.txt .
+
+  ```bash
+  pip install x
+  ```
+  where x is everything inside requirements.txt
 
   Here is what your Pipfile will appear when you're ready to go
 
@@ -62,13 +89,14 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
   django-registration = "*"
   requests = "*"
   ```
-* Activate your virtual environment
   
-  ```bash
-  > pipenv shell
-  ```
 
-* Run these commands in your terminal.
+* Configure environment variable using **python-decople**
+
+  Create a file named .env in project's root directory (i.e. inside pro1, where .env.example reside)
+  and copy the content from .env.example file and paste it in .env file.
+
+* Navigate to pro1 and run the following command in your terminal.
 
   ```bash
   > python manage.py runserver
