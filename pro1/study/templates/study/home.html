@@ -1,17 +1,62 @@
-{% extends "blog/base.html" %}
-{% block content %}
-  <h1> Departments </h1>
-  <ul>
-      <li> <a href = "year_1/">First Year</a></li>
+<html>
+<head>
+  <style>
+    button  {
+      padding: 10;
+      font-size: 15;
+      background-color:lightgrey+white;
+      border-color: black;
+      margin-top: 10px;
+      }
 
-      <li> <a href="cs/">Computer Science and Engineering</a></li>
-      <li> <a href="ec/">Electronics and Communication Engineering</a></li>
-      <li> <a href="ee/">Electrical Engineering</a></li>
-      <li> <a href="mm/">Metallurgical and Materials Engineering</a></li>
+    a:link  {
+      color: black;
+      display: inline-block;
+      font-size: 15;
+      text-decoration: none;
+      text-decoration-color: white;
+    }
 
-      <li> <a href="bt/">Biotechnology</a></li>
-      <li> <a href="it/">Information Technology</a></li>
-      <li> <a href="ce/">Civil Engineering</a></li>
-      <li> <a href="ch/">Chemical Engineering</a></li>
+    a:visited {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover  {
+      color:white;
+      background-color: lightpink;
+    }
+
+    hr  {
+      height: 10px;
+      background-color: black;
+    }
+
+    
+  </style>
+  <title>welcome to the home page</title>
+</head>
+<body>
+  <h1 align="center" style="font-size: 50; background-color: tomato; margin-bottom: 15px;">welcome to the home page</h1>
+  <hr style="height: 10px;background-color: black;">
+  <h1 style="font-size:50px; background-color:tomato; margin-top: 5px; margin-bottom: 5px;"> Departments </h1>
+  <hr>
+  <div style="background-color: orange;">
+  <ul type="circle" style="color: red;font-size: 25">
+      <li><button style="border-radius: 12px;"><a href = "year_1/"><b>First Year</a></button></li>
+
+      <li><button style="border-radius: 12px;"><a href="cs/"><b>Computer Science and Engineering</a></button></li>
+      <li><button style="border-radius: 12px;"> <a href="ec/"><b>Electronics and Communication Engineering</a></button></li>
+      <li><button style="border-radius: 12px;"> <a href="ee/"><b>Electrical Engineering</a></button></li>
+      <li><button style="border-radius: 12px;"> <a href="mm/"><b>Metallurgical and Materials Engineering</a></button></li>
+
+      <li><button style="border-radius: 12px;"> <a href="bt/"><b>Biotechnology</a></button></li>
+      <li><button style="border-radius: 12px;"> <a href="it/"><b>Information Technology</a></button></li>
+      <li> <button style="border-radius: 12px;"><a href="ce/"><b>Civil Engineering</a></button></li>
+      <li> <button style="border-radius: 12px; margin-bottom: 10px;"><a href="ch/"><b>Chemical Engineering</b></a></button></li>
   </ul>
-{% endblock content %}
+</div>
+  <hr>
+</body>
+</html>
+
