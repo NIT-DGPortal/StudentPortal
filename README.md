@@ -18,6 +18,7 @@
 
 [![Build Status](https://travis-ci.com/monsij/StudentPortal.svg?branch=master)](https://travis-ci.com/monsij/StudentPortal)
 [![CodeFactor](https://www.codefactor.io/repository/github/monsij/studentportal/badge)](https://www.codefactor.io/repository/github/monsij/studentportal)
+[![codecov](https://codecov.io/gh/monsij/StudentPortal/branch/master/graph/badge.svg)](https://codecov.io/gh/monsij/StudentPortal)
 [![Report](https://img.shields.io/badge/status-pre--release-green.svg)]()
 [![License](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/monsij/StudentPortal/)
 [![django1.10](https://img.shields.io/badge/django-2.0-brightgreen.svg)](https://www.djangoproject.com)
