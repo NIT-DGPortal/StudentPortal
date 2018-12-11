@@ -10,5 +10,9 @@ cache:
   - pip3
 install:
   - pip3 install -r pro1/requirements.txt
+  - pip3 install codecov
 script:
   - python3 pro1/manage.py 
+  - coverage run pro1/manage.py
+after_success:
+  - codecov
