@@ -1,17 +1,16 @@
-
 <html>
 <head>
   <style>
     button  {
       padding: 10;
       font-size: 15;
-      background-color:lightgrey+white;
-      border-color: black;
-      margin-top: 10px;
+      background-color:black;
+      width: 100%;
+      height:50px;
       }
 
     a:link  {
-      color: black;
+      color: white;
       display: inline-block;
       font-size: 15;
       text-decoration: none;
@@ -19,7 +18,7 @@
     }
 
     a:visited {
-      color: black;
+      color: white;
       text-decoration: none;
     }
 
@@ -32,33 +31,70 @@
       height: 10px;
       background-color: black;
     }
+    .flex-container {
+      display: flex;
+      border-color: black;
+      width: 100%;
+    }
 
+    div {
+      padding: 5px;
+      align-items: center;
+      width: 33%;
+      height: 400px;
+      margin-bottom: 5px;
+    }
+
+    img  {
+      height: 350px;
+      border-color: black;
+    }
     
   </style>
   <title>welcome to the home page</title>
 </head>
 <body>
-  <h1 align="center" style="font-size: 50; background-color: tomato; margin-bottom: 15px;">welcome to the home page</h1>
-  <hr style="height: 10px;background-color: black;">
-  <h1 style="font-size:50px; background-color:tomato; margin-top: 5px; margin-bottom: 5px;"> Departments </h1>
-  <hr>
-  <div style="background-color: orange;">
-  <ul type="circle" style="color: red;font-size: 25">
-      <li><button style="border-radius: 12px;"><a href = "year_1/"><b>First Year</a></button></li>
-
-      <li><button style="border-radius: 12px;"><a href="cs/"><b>Computer Science and Engineering</a></button></li>
-      <li><button style="border-radius: 12px;"> <a href="ec/"><b>Electronics and Communication Engineering</a></button></li>
-      <li><button style="border-radius: 12px;"> <a href="ee/"><b>Electrical Engineering</a></button></li>
-      <li><button style="border-radius: 12px;"> <a href="mm/"><b>Metallurgical and Materials Engineering</a></button></li>
-
-      <li><button style="border-radius: 12px;"> <a href="bt/"><b>Biotechnology</a></button></li>
-      <li><button style="border-radius: 12px;"> <a href="it/"><b>Information Technology</a></button></li>
-      <li> <button style="border-radius: 12px;"><a href="ce/"><b>Civil Engineering</a></button></li>
-      <li> <button style="border-radius: 12px; margin-bottom: 10px;"><a href="ch/"><b>Chemical Engineering</b></a></button></li>
-
-  </ul>
+  <p align="center" style="font-size: 35px; background-color: lightgreen;margin: none; font-family: sans-serif;margin-bottom: 0px; padding:15px">
+  Welcome To The HomePage<br>
+    <font style="font-size: 20px">
+      a creation of NIT-DRG<br></font>  
+  </p>
+  <p style="font-size:25px;color: white; background-color:black; margin-top:0px; margin-bottom: 5px;padding: 10px; font-family: sans-serif;"> departments </p>
+  <br>
+  <div style="background-color: white;" class="flex-container">  
+      <div>
+        <img src="photos/first_year.jpg" width="100%">
+        <button style="border-radius: 5px;"><a href = "year_1/" target="_blank"><b>First Year</b></a></button></div>
+      <div>
+        <img src="photos/cs_photo.jpg" width="100%">
+        <button style="border-radius:5px;"><a href="cs/"><b>Computer Science and Engineering</b></a></button></div>
+      <div>
+        <img src="photos/electronics_photo.jpg" width="100%">
+        <button style="border-radius:5px;"> <a href="ec/"><b>Electronics and Communication Engineering</b></a></button></div>
+  </div>
+  <div style="background-color: white;" class="flex-container">
+      <div>
+        <img src="photos/ee_photo.jpg" width="100%">
+        <button style="border-radius:5px;"> <a href="ee/"><b>Electrical Engineering</b></a></button></div>
+      <div>
+        <img src="photos/mm_photo.jpg" width="100%">
+        <button style="border-radius:5px;"> <a href="mm/"><b>Metallurgical and Materials Engineering</b></a></button></div>
+      <div>
+        <img src="photos/bio_photo.jpg" width="100%">
+        <button style="border-radius:5px;"> <a href="bt/"><b>Biotechnology</b></a></button></div>
+  </div>
+  <div style="background-color: white;" class="flex-container">
+      <div>
+        <img src="photos/it_photo.jpg" width="100%">
+        <button style="border-radius:5px;"> <a href="it/"><b>Information Technology</b></a></button></div>
+      <div>
+        <img src="photos/civil_photo.jpg" width="100%">
+        <button style="border-radius:5px;"><a href="ce/"><b>Civil Engineering</b></a></button></div>
+      <div>
+        <img src="photos/chem_photo.jpg" width="100%">
+        <button style="border-radius:5px; margin-bottom: 10px;"><a href="ch/"><b>Chemical Engineering</b></a></button></div>
 </div>
-  <hr>
+<hr>
 </body>
 </html>
 
