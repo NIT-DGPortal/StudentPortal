@@ -1,5 +1,12 @@
 {% extends 'blog/base.html' %}
 {% block content %}
+<head>
+	{% if title %}
+		<title>{{ post.title }}</title>
+	{% else %}
+		<title>Student Portal</title>
+	{% endif %}
+</head>
   <p>Please confirm your email address to complete the registration. </p>
   <a href = "https://www.gmail.com" target="_blank">Click here to continue</a>
 {% endblock %}

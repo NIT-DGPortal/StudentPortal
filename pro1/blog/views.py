@@ -18,3 +18,6 @@ def about(request):
 
 def contributor(request):
 	return render(request, 'blog/contributor.html')
+
+def medium(request):
+	return render(request, 'blog/gitCard/medium.html')

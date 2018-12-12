@@ -1,55 +1,32 @@
 {% extends "blog/base.html" %}
 {% load static %}
 {% block content %}
+<head>
+	{% if title %}
+		<title>{{ post.title }}</title>
+	{% else %}
+		<title>StudentPortal:Contributors</title>
+	{% endif %}
+</head>
 	<h1> Contributors </h1>
 	<br>
+	<style>
+		body{
+		padding-left:5em ;
+		}
+	</style>
 
-<div class="row text-center">
-	<div class="col-sm-4">
-		<div class="thumbnail">
-			<img src="{% static 'blog/images/monsij.jpeg' %}" width="400" height="300">
-			<p><strong>Monsij Biswal</strong></p>
-			<p><i>Owner</i></p>
-			<a href="https://github.com/monsij"><button class="btn">@monsij</button></a>
-		</div>
-	</div>
 
-	<div class="col-sm-4">
-		<div class="thumbnail">
-			<img src="{% static 'blog/images/harry-hov.jpeg' %}" width="400" height="300">
-			<p><strong>Hariom Verma</strong></p>
-			<p><i>Contributor</i></p>
-			<a href="https://github.com/harry-hov"><button class="btn">@harry-hov</button></a>
-		</div>
-	</div>
-
-	<div class="col-sm-4">
-		<div class="thumbnail">
-			<img src="{% static 'blog/images/gutsytechster.jpeg' %}" width="400" height="300">
-			<p><strong>Prashant Sharma</strong></p>
-			<p><i>Contributor</i></p>
-			<a href="https://github.com/gutsytechster"><button class="btn">@gutsytechster</button></a>
-		</div>
-	</div>
-
-	<div class="col-sm-4">
-		<div class="thumbnail">
-			<img src="{% static 'blog/images/r3trd.jpeg' %}" width="400" height="300">
-			<p><strong>Satyajit Das</strong></p>
-			<p><i>Owner</i></p>
-			<a href="https://github.com/r3trd"><button class="btn">@r3trd</button></a>
-		</div>
-	</div>
-
-	<div class="col-sm-4">
-		<div class="thumbnail">
-			<img src="{% static 'blog/images/gopavasanth.jpeg' %}" width="400" height="300">
-			<p><strong>Gopa Vasanth</strong></p>
-			<p><i>Contributor</i></p>
-			<a href="https://github.com/gopavasanth"><button class="btn">@gopavasanth</button></a>
-		</div>
-	</div>
-</div>
+	<div class="github-card" data-github="monsij" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="r3trd" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="harry-hov" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="Tiyas-13" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="gutsytechster" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="gopavasanth" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="BhanuPrakashNani" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="arpit3018" data-width="240" data-height="300" data-theme="medium"></div>
+	<div class="github-card" data-github="nguptaa" data-width="240" data-height="300" data-theme="medium"></div>
+	<script src="{% static 'blog/jsGit/widget.js' %}"></script>
 
 
 {% endblock content %}

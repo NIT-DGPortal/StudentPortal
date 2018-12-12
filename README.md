@@ -16,7 +16,9 @@
   <a href="#KWoC">KWoC</a> •
 </p>
 
-
+[![Build Status](https://travis-ci.com/monsij/StudentPortal.svg?branch=master)](https://travis-ci.com/monsij/StudentPortal)
+[![CodeFactor](https://www.codefactor.io/repository/github/monsij/studentportal/badge)](https://www.codefactor.io/repository/github/monsij/studentportal)
+[![codecov](https://codecov.io/gh/monsij/StudentPortal/branch/master/graph/badge.svg)](https://codecov.io/gh/monsij/StudentPortal)
 [![Report](https://img.shields.io/badge/status-pre--release-green.svg)]()
 [![License](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/monsij/StudentPortal/)
 [![django1.10](https://img.shields.io/badge/django-2.0-brightgreen.svg)](https://www.djangoproject.com)
@@ -26,7 +28,7 @@
 [![Gitter](https://img.shields.io/gitter/room/NIT-DGPortal/Lobby.svg?style=flat-square)](https://gitter.im/NIT-DGPortal-main/Lobby)
 [![HitCount](http://hits.dwyl.com/monsij/StudentPortal.svg)](http://hits.dwyl.com/monsij/StudentPortal)
 ## KWoC
-We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc.kossiitkgp.org/). If you're contributing as a part of this program, we will be having a special mention of such contributors in the repo. Once again, Happy coding
+We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc.kossiitkgp.org/). If you're contributing as a part of this program, we will be having a special mention of such contributors in the repo. Once again, Happy Coding
 ## Key Features
 <ul>
   <li> Based on Python</li>
@@ -38,18 +40,45 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
   
 ## How to Use
 
-* Start off by cloning this repository into your local directory.
-  
+* Start off by forking this repository and cloning it to get your local copy.
+
   ```bash
   > git clone https://github.com/NIT-DGPortal/portal-main.git 
   ```
 
-* If you prefer virtual-environment ([pipenv](https://pipenv.readthedocs.io/) suggested) get yourself these packages in it. 
-  Initiate a python 3 environment
+* If you prefer a virtual-environment ([pipenv](https://pipenv.readthedocs.io/) suggested) you should have pip and pipenv installed.
+
+  ```bash
+  > sudo apt install python3-pip python3-dev
+    pip3 install --user pipenv 
+  ```
+  
+  Add pipenv to PATH
+  
+  ```bash
+  echo "PATH=$HOME/.local/bin:$PATH" >> ~/.bashrc
+  source ~/.bashrc
+  ```
+
+* Navigate to your local directory and initiate a python 3 environment.
   
   ```bash
   > pipenv --three 
   ```
+  
+  
+* Activate your virtual environment.
+  
+  ```bash
+  > pipenv shell
+  ```
+
+  Now install all requisites in requirements.txt .
+
+  ```bash
+  pip install x
+  ```
+  where x is everything inside requirements.txt
 
   Here is what your Pipfile will appear when you're ready to go
 
@@ -61,13 +90,14 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
   django-registration = "*"
   requests = "*"
   ```
-* Activate your virtual environment
   
-  ```bash
-  > pipenv shell
-  ```
 
-* Run these commands in your terminal.
+* Configure environment variable using **python-decople**
+
+  Create a file named .env in project's root directory (i.e. inside pro1, where .env.example reside)
+  and copy the content from .env.example file and paste it in .env file.
+
+* Navigate to pro1 and run the following command in your terminal.
 
   ```bash
   > python manage.py runserver
@@ -88,9 +118,9 @@ All related communications take place [here](https://gitter.im/NIT-DGPortal-main
 Exactly putting we want it to be simple are permissive. Interested contributors are heartedly welcomed. :blush: 
 ## Credits
 
-* The initial version was made in just a span of 27 hours,yes it was that short :sparkles:
+* The initial version was made in just a span of 27 hours, yes it was that short :sparkles:
 * Authentication and Profile credits to [Satyajit Das](https://github.com/r3trd)
-* CSS,Bootstrap Rendering realised by [Anoop Kumar](https://github.com/anoop1311)
+* CSS, Bootstrap Rendering realized by [Anoop Kumar](https://github.com/anoop1311)
 * General codebase and framework by [Monsij Biswal](https://github.com/monsij)
 
 For more info head to [Wiki](https://github.com/monsij/StudentPortal/wiki) for more information

@@ -1,6 +1,13 @@
 {% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
+<head>
+	{% if title %}
+		<title>{{ post.title }}</title>
+	{% else %}
+		<title>Student Portal</title>
+	{% endif %}
+</head>	
 	<div class = "content-section">
 		<form method="POST">
 			{%  csrf_token %}

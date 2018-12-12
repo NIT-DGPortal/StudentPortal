@@ -1,4 +1,11 @@
 {% extends 'blog/base.html' %}
 {% block content %}
+<head>
+	{% if title %}
+		<title>{{ post.title }}</title>
+	{% else %}
+		<title>Student Portal</title>
+	{% endif %}
+</head>
   <p>The confirmation link was invalid, possibly because it has already been used.</p>
 {% endblock %}
