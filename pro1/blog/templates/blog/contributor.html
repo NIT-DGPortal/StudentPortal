@@ -1,9 +1,16 @@
 {% extends "blog/base.html" %}
 {% load static %}
 {% block content %}
+<head>
+	{% if title %}
+		<title>{{ post.title }}</title>
+	{% else %}
+		<title>StudentPortal:Contributors</title>
+	{% endif %}
+</head>
 	<h1> Contributors </h1>
 	<br>
-	
+
 	<div class="github-card" data-github="monsij" data-width="240" data-height="300" data-theme="medium"></div>
 	<div class="github-card" data-github="r3trd" data-width="240" data-height="300" data-theme="medium"></div>
 	<div class="github-card" data-github="harry-hov" data-width="240" data-height="300" data-theme="medium"></div>
