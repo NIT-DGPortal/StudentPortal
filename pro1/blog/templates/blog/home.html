@@ -1,5 +1,12 @@
 {% extends "blog/base.html" %}
 {% block content %}
+<head>
+	{% if title %}
+		<title>{{ post.title }}</title>
+	{% else %}
+		<title>StudentPortal:Home</title>
+	{% endif %}
+</head>
 	<p> In blog Home </p>
 	<br><br><br><br><br><br><br><br><br>
 {% endblock content %}
