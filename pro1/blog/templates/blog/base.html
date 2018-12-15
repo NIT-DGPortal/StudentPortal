@@ -18,13 +18,6 @@
 	<script src="{% static 'blog/js/jquery.min.js' %}"></script>
 	<script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
 
-
-
-	{% if title %}
-		<title> {{ post.title}}</title>
-	{% else %}
-		<title> Blog Home</title>
-	{% endif %}
 </head>
 <body>
 	<header>
@@ -71,7 +64,7 @@
 	  </nav>
 	</header>
 
-	  
+
 
 
 	<br><br><br><br><br>
@@ -88,10 +81,10 @@
 	      {% block content %}{% endblock %}
 	    </div>
 	    <div class="col-md-4">
-			
+
 			<!-- Side Space -->
-		    
-		
+
+
 		  </div>
 	</div>
 	</main>
@@ -104,7 +97,7 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-   
+
 	 <!-- Footer -->
 	 <footer class="text-center">
 
@@ -115,12 +108,12 @@
 						<p>This portal is meant for students of NIT Durgapur for keeping up-to-date information about academics, placements, internships and all other major updates
 
 								Students can find all the study materials in this portal
-								
+
 								Register yourself to get started</p>
-			  
+
 					  </div>
 					  <div class="col-md-4">
-			  
+
 						  <!-- Links -->
 						  <h5 class="text-uppercase">Important Links</h5>
 							<hr>
@@ -128,30 +121,30 @@
 								<li><a href="https://raw.githubusercontent.com/NIT-DGPortal/portal-files/master/Academic-Calendar.pdf" target ="_blank">
 									Academic Calendar
 								</a></li>
-								
+
 								<li><a href="https://raw.githubusercontent.com/NIT-DGPortal/portal-files/master/Institute-Holidays.pdf" target = "_blank">
 									Holidays
 								</a></li>
-								
+
 								<li><a href="http://172.16.24.9:9001/default.aspx" target ="_blank">
 									Chanakya Portal
 								</a></li>
-								
+
 								<li><a href="{% url 'blog-contact' %}">
 									Contacts
 								</a></li>
-								
+
 								<li><a href="{% url 'blog-contributor' %}">
 									Contributors
 								</a></li>
 						  </ul>
-			  
+
 						</div>
 						<div class="col-md-2">
-		
+
 							<a style="text-decoration: none" class="clock24" id="tz24-1544552210-cc13072-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsInNob3d0aW1lem9uZSI6IjAiLCJ0eXBlIjoiZCIsImxhbmciOiJlbiJ9" title="time at India" target="_blank" rel="nofollow">India <br> </a>
 							<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
-							
+
 							<div style="color:white;text-align: center;font-size: 14px;">
 								<span><h4 style="margin-bottom:1px;">Your IP:</h4></span>
 								<script type="application/javascript">
@@ -163,19 +156,19 @@
 							</div>
 
 						</div>
-			  
+
 					</div>
-			  
+
 				  </div>
 
 				  <div class="text-center">
 
 						<p class="navbar-text">Crafted with <span class="glyphicon glyphicon-heart"></span> by <a href="https://github.com/r3trd">r3trd</a> & <a href="https://github.com/monsij">monsij</a></p>
 						<a href="https://github.com/NIT-DGPortal/portal-main" class="navbar-btn btn-danger btn pull-right">
-						<span class="glyphicon glyphicon-star"></span>  Give us a star on Github</a>
+						<span class="glyphicon glyphicon-star"></span>  Give us a star on Github</a>
 				  </div>
 				  <br<br><br>
-			  
+
 	</footer>
 
 
