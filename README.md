@@ -76,9 +76,10 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
   Now install all requisites in requirements.txt .
 
   ```bash
-  pip install x
+  cd pro1
+  pip install -r requirements.txt
   ```
-  where x is everything inside requirements.txt
+  
 
   Here is what your Pipfile will appear when you're ready to go
 
