@@ -78,7 +78,8 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
   Now install all requisites in requirements.txt .
 
   ```bash
-  pip install x
+  cd pro1
+  pip install -r requirements.txt
   ```
   where x is everything inside requirements.txt
 
@@ -96,9 +97,7 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
 
 * Configure environment variable using **python-decople**
 
-  Create a file named .env in project's root directory (i.e. inside pro1, where .env.example reside)
-  and copy the content from .env.example file and paste it in .env file.
-
+  
 * Navigate to pro1 and run the following command in your terminal.
 
   ```bash
