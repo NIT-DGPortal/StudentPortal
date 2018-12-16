@@ -13,14 +13,16 @@ body {
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-    
+
 }
 
-.navbar li a, .navbar .navbar-brand {
+.navbar li a,
+.navbar .navbar-brand {
     color: green !important;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a {
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
     color: #f4511e !important;
     background-color: #fff !important;
 }
@@ -49,7 +51,8 @@ body {
     transition: .2s;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
     border: 1px solid #333;
     background-color: #fff;
     color: #000;
@@ -59,15 +62,15 @@ footer {
     background-color: #159765;
     color: #f5f5f5;
     padding: 32px;
-    /*position:absolute; */ 
-    bottom:0;
-    
-   
+    position: absolute;
+    bottom: 0;
 }
+
 footer a {
     color: #f5f5f5;
 }
+
 footer a:hover {
     color: #777;
     text-decoration: none;
-}  
+}
