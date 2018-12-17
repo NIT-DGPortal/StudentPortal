@@ -1,0 +1,62 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    <head>
+        {% if title %}
+            <title>{{ post.title }}</title>
+        {% else %}
+            <title>StudentPortal:Placement</title>
+        {% endif %}
+    </head>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <tr>
+                <td><strong>Company Name</strong></td>
+                <td>{{ placement.company_name }}</td>
+            </tr>
+            <tr>
+                <td><strong>Department open for</strong></td>
+                <td>
+                  {% for department in placement.department.all %}
+                      {% if forloop.last %}
+                          {{ department }}
+                      {% else %}
+                          {{ department }},
+                      {% endif %}
+                  {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Qualification needed</strong></td>
+                <td>{{ placement.qualification_needed }}</td>
+            </tr>
+            <tr>
+                <td><strong>Job Designation</strong></td>
+                <td>{{ placement.job_designation }}</td>
+            </tr>
+            <tr>
+                <td><strong>Last date to apply</strong></td>
+                <td>{{ placement.last_date_to_apply }}</td>
+            </tr>
+            <tr>
+                <td><strong>Salary offered</strong></td>
+                <td>{{ placement.expected_salary }}</td>
+            </tr>
+            <tr>
+                <td><strong>Interview or Test location</strong></td>
+                <td>{{ placement.interview_or_test_location }}</td>
+            </tr>
+            <tr>
+                <td><strong>Additional Documents</strong></td>
+                <td>{{ placement.additional_documents }}</td>
+            </tr>
+            {% if placement.additional_information %}
+                <tr>
+                    <td><strong>Additional Information</strong></td>
+                    <td>{{ placement.additional_information }}</td>
+                </tr>
+            {% endif %}
+        </table>
+    </div>
+{% endblock content %}

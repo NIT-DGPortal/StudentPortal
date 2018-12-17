@@ -1,0 +1,70 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    <head>
+        {% if title %}
+            <title>{{ post.title }}</title>
+        {% else %}
+            <title>StudentPortal:Internship</title>
+        {% endif %}
+    </head>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <tr>
+                <td><strong>Company Name</strong></td>
+                <td>{{ internship.company_name }}</td>
+            </tr>
+            <tr>
+                <td><strong>Department open for</strong></td>
+                <td>
+                  {% for department in internship.department.all %}
+                      {% if forloop.last %}
+                          {{ department }}
+                      {% else %}
+                          {{ department }},
+                      {% endif %}
+                  {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Job Designation</strong></td>
+                <td>{{ internship.job_designation }}</td>
+            </tr>
+            <tr>
+                <td><strong>Qualification needed</strong></td>
+                <td>{{ internship.qualification_needed }}</td>
+            </tr>
+            <tr>
+                <td><strong>Last date to apply</strong></td>
+                <td>{{ internship.last_date_to_apply }}</td>
+            </tr>
+            <tr>
+                <td><strong>Salary offered</strong></td>
+                <td>{{ internship.salary_offered }}</td>
+            </tr>
+            <tr>
+                <td><strong>Test location</strong></td>
+                <td>{{ internship.test_location }}</td>
+            </tr>
+            <tr>
+                <td><strong>Person of contact</strong></td>
+                <td>{{ internship.person_of_contact }}</td>
+            </tr>
+            <tr>
+                <td><strong>Email id</strong></td>
+                <td>{{ internship.email_id }}</td>
+            </tr>
+            <tr>
+                <td><strong>Phone no</strong></td>
+                <td>{{ internship.phone_no }}</td>
+            </tr>
+            {% if internship.other_details %}
+                <tr>
+                    <td><strong>Other details</strong></td>
+                    <td>{{ internship.other_details }}</td>
+                </tr>
+            {% endif %}
+        </table>
+    </div>
+{% endblock content %}
