@@ -31,10 +31,6 @@ def cs_third(request):
 def cs_fourth(request):
 	return render(request,'study/cs/cs_fourth.html')
 
-@login_required(redirect_field_name='')
-def cs(request):
-	return render(request,'study/cs/cs.html')
-
 
 
 
@@ -50,12 +46,6 @@ def ec_third(request):
 def ec_fourth(request):
 	return render(request,'study/ec/ec_fourth.html')
 
-@login_required(redirect_field_name='')
-def ec(request):
-	return render(request,'study/ec/ec.html')
-
-
-
 
 @login_required(redirect_field_name='')
 def ee_second(request):
@@ -68,10 +58,6 @@ def ee_third(request):
 @login_required(redirect_field_name='')
 def ee_fourth(request):
 	return render(request,'study/ee/ee_fourth.html')
-
-@login_required(redirect_field_name='')
-def ee(request):
-	return render(request,'study/ee/ee.html')
 
 
 
@@ -88,11 +74,6 @@ def mm_third(request):
 def mm_fourth(request):
 	return render(request,'study/mm/mm_fourth.html')
 
-@login_required(redirect_field_name='')
-def mm(request):
-	return render(request,'study/mm/mm.html')
-
-
 
 
 @login_required(redirect_field_name='')
@@ -106,10 +87,6 @@ def bt_third(request):
 @login_required(redirect_field_name='')
 def bt_fourth(request):
 	return render(request,'study/bt/bt_fourth.html')
-
-@login_required(redirect_field_name='')
-def bt(request):
-	return render(request,'study/bt/bt.html')
 
 
 
@@ -126,10 +103,6 @@ def it_third(request):
 def it_fourth(request):
 	return render(request,'study/it/it_fourth.html')
 
-@login_required(redirect_field_name='')
-def it(request):
-	return render(request,'study/it/it.html')
-
 
 
 
@@ -145,10 +118,6 @@ def ce_third(request):
 def ce_fourth(request):
 	return render(request,'study/ce/ce_fourth.html')
 
-@login_required(redirect_field_name='')
-def ce(request):
-	return render(request,'study/ce/ce.html')
-
 
 
 
@@ -163,7 +132,3 @@ def ch_third(request):
 @login_required(redirect_field_name='')
 def ch_fourth(request):
 	return render(request,'study/ch/ch_fourth.html')
-
-@login_required(redirect_field_name='')
-def ch(request):
-	return render(request,'study/ch/ch.html')
