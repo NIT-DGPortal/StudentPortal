@@ -6,19 +6,124 @@
   {% else %}
     <title>StudyZone</title>
   {% endif %}
+
+  <style>
+      ul
+      {
+        list-style-type: circle;
+      }
+      a:hover, a:focus {
+        /* color: #2a6496; */
+        text-decoration: none !important;
+      }
+  </style>
 </head>
   <h1> Departments </h1>
-  <ul>
-      <li> <a href = "year_1/">First Year</a></li>
-
-      <li> <a href="cs/">Computer Science and Engineering</a></li>
-      <li> <a href="ec/">Electronics and Communication Engineering</a></li>
-      <li> <a href="ee/">Electrical Engineering</a></li>
-      <li> <a href="mm/">Metallurgical and Materials Engineering</a></li>
-
-      <li> <a href="bt/">Biotechnology</a></li>
-      <li> <a href="it/">Information Technology</a></li>
-      <li> <a href="ce/">Civil Engineering</a></li>
-      <li> <a href="ch/">Chemical Engineering</a></li>
+  <ul style="padding-top: 10px;">
+      <div class=" dropdown">
+        <a href="year_1/">
+          First Year 
+        </a>
+      </div>
   </ul>
+
+  <ul>
+      <div class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Computer Science and Engineering 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="cs/year_2/">Second</a></li>
+            <li><a href="cs/year_3/">Third</a></li>
+            <li><a href="cs/year_4/">Fourth</a></li>
+        </ul>
+    </div>
+  </ul>
+
+  <ul>
+      <div class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Electronics and Communication Engineering 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="ec/year_2/">Second</a></li>
+            <li><a href="ec/year_3/">Third</a></li>
+            <li><a href="ec/year_4/">Fourth</a></li>
+        </ul>
+    </div>
+  </ul>
+
+  <ul>
+      <div class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Electrical Engineering 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="ee/year_2/">Second</a></li>
+            <li><a href="ee/year_3/">Third</a></li>
+            <li><a href="ee/year_4/">Fourth</a></li>
+        </ul>
+    </div>
+  </ul>
+
+  <ul>
+      <div class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Metallurgical and Materials Engineering
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="mm/year_2/">Second</a></li>
+            <li><a href="mm/year_3/">Third</a></li>
+            <li><a href="mm/year_4/">Fourth</a></li>
+        </ul>
+    </div>
+  </ul>
+
+  <ul>
+      <div class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Biotechnology 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="bt/year_2/">Second</a></li>
+            <li><a href="bt/year_3/">Third</a></li>
+            <li><a href="bt/year_4/">Fourth</a></li>
+        </ul>
+    </div>
+  </ul>
+
+  <ul>
+      <div class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Information Technology 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="it/year_2/">Second</a></li>
+            <li><a href="it/year_3/">Third</a></li>
+            <li><a href="it/year_4/">Fourth</a></li>
+        </ul>
+    </div>
+  </ul>
+
+  <ul>
+      <div class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Civil Engineering
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="ce/year_2/">Second</a></li>
+            <li><a href="ce/year_3/">Third</a></li>
+            <li><a href="ce/year_4/">Fourth</a></li>
+        </ul>
+    </div>
+  </ul>
+
+  <ul>
+      <div class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Chemical Engineering
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="ch/year_2/">Second</a></li>
+            <li><a href="ch/year_3/">Third</a></li>
+            <li><a href="ch/year_4/">Fourth</a></li>
+        </ul>
+    </div>
+  </ul>
+
+
+
+
 {% endblock content %}
