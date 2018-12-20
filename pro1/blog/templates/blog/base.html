@@ -1,16 +1,17 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Tab icon -->
 	<link rel="SHORTCUT ICON" href="{% static 'blog/images/dgpicon.png' %}" type="image/png" />
 
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- local css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,119 +20,165 @@
 	<script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
 
 </head>
-<body>
 
-	  <nav class="navbar navbar-default navbar-fixed-top">
-	    <div class="container">
-	      <div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarToggle">
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="{% url 'blog-about' %}">
-				  <span>
-					  <img class="" src="{% static 'blog/images/dgpicon.png' %}" type="image/png" height="28" width="28">
-					  Student Portal
-				  </span>
-			  </a>
-		  </div>
-	      <div class="collapse navbar-collapse" id="navbarToggle">
-			  <ul class="nav navbar-nav navbar-right">
-				  {% if user.is_authenticated %}
-				  	<li><a href="{% url 'blog-home'  %}">Home</a></li>
-				  	<li><a href="{% url 'notice-home' %}">Notice Board</a></li>
-				  	<li><a href="/study">Study Zone</a></li>
-				  	<li><a href="/interviews">Placement/Internships</a></li>
-				  	<li><a href="{% url 'profile' %}">Profile</a></li>
-	        	  	<li><a href="{% url 'logout' %}">Logout</a></li>
-				  {% else %}
-		          	<li><a href="{% url 'login'%}">Login</a></li>
-		          	<li><a href="{% url 'register'%}">Register</a></li>
-				  {% endif %}
-			  </ul>
-		  </div>
-	    </div>
-	  </nav>
+<body>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarToggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+
+
+
+					<a class="navbar-brand" href="{% url 'blog-about' %}">
+						<span>
+							<img class="" src="{% static 'blog/images/dgpicon.png' %}" type="image/png" height="28" width="28">
+							Student Portal
+						</span>
+					</a>
+
+
+
+				</div>
+				<div class="collapse navbar-collapse" id="navbarToggle">
+					<ul class="nav navbar-nav navbar-right">
+						{% if user.is_authenticated %}
+						<li><a href="{% url 'blog-home'  %}">Home</a></li>
+						<li><a href="{% url 'notice-home' %}">Notice Board</a></li>
+						<li><a href="/study">Study Zone</a></li>
+						<li><a href="/interviews">Placement/Internships</a></li>
+						<li><a href="{% url 'profile' %}">Profile</a></li>
+						<li><a href="{% url 'logout' %}">Logout</a></li>
+						{% else %}
+						<li><a href="{% url 'login'%}">Login</a></li>
+						<li><a href="{% url 'register'%}">Register</a></li>
+						{% endif %}
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
 
 	<br><br><br><br><br>
 	<main role="main" class="container">
-	  <div class="row">
-	    <div class="col-md-8">
-	      {% if messages %}
-	      	{% for message in messages %}
-	      		<div class="alert alert-{{ message.tags }}">
-	      			{{ message}}
-	      		</div>
-	      	{% endfor %}
-	      {% endif %}
-	      {% block content %}{% endblock %}
-	    </div>
-	    <div class="col-md-4">
-	      <div class="content-section">
-	        <!--<h3>##To be decided</h3> -->
-	        <!--<p class='text-muted'>You can put any information here you'd like. -->
-	        <p>
-	          <ul class="list-group">
-	            <li class="list-group-item list-group-item-light"><a href="https://raw.githubusercontent.com/NIT-DGPortal/portal-files/master/Academic-Calendar.pdf" target ="_blank">Academic Calendar</a></li>
-	            <li class="list-group-item list-group-item-light"><a href="https://raw.githubusercontent.com/NIT-DGPortal/portal-files/master/Institute-Holidays.pdf" target = "_blank">Holidays</a></li>
-              <li class="list-group-item list-group-item-light"><a href="http://172.16.24.9:9001/default.aspx" target ="_blank">Chanakya Portal</a></li>
-	            <li class="list-group-item list-group-item-light"><a href="{% url 'blog-contact' %}">Contacts</a></li>
-							<li class="list-group-item list-group-item-light"><a href="{% url 'blog-contributor' %}">Contributors</a></li>
-							<li class="list-group-item list-group-item-light" style="background-color:#77BE7B;">
-								<div style="text-align:center; color: white;margin-bottom: -20px;">
-									<span><h3 style="margin-bottom:3px;">The time now is:</h3></span>
-									<iframe src="//free.timeanddate.com/clock/i6j9n8ow/n54/fs20/fcfff/tc77be7b" frameborder="0" width="225" height="34"></iframe>	
-								</div>
-								<!-- get IP address -->
-								<div style="color:white;text-align: center;font-size: 20px;">
-								<span><h3 style="margin-bottom:-1px;">Your IP:</h3></span>
-								<script type="application/javascript">
-									function getIP(json) {
-										document.write(json.ip);
-									}
-								</script>
-								<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-								</div>
-								<!-- weather widget -->
-								<a class="weatherwidget-io" href="https://forecast7.com/en/22d5788d36/kolkata/" data-label_1="KOLKATA" data-label_2="WEATHER"
-								data-font="Helvetica" data-mode="Current" data-theme="original" data-basecolor="#77BE7B">KOLKATA WEATHER</a>
-							</li>
-	          </ul>
-	        </p>
-	      </div>
-	    </div>
-	  </div>
+		<div class="row">
+			<div class="col-md-8">
+				{% if messages %}
+				{% for message in messages %}
+				<div class="alert alert-{{ message.tags }}">
+					{{ message}}
+				</div>
+				{% endfor %}
+				{% endif %}
+				{% block content %}{% endblock %}
+			</div>
+			<div class="col-md-4">
+
+				<!-- Side Space -->
+
+
+			</div>
+		</div>
 	</main>
-	<br><br><br>
-	<!-- Optional JavaScript -->
+	<br><br><br><br>
+	<!-- Optional  JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script>//weather widget script
-			!function(d,s,id){
-			var js,fjs=d.getElementsByTagName(s)[0];
-			if(!d.getElementById(id)){
-			js=d.createElement(s);
-			js.id=id;
-			js.src='https://weatherwidget.io/js/widget.min.js';
-			fjs.parentNode.insertBefore(js,fjs);
-			}
-			}(document,'script','weatherwidget-io-js');
-		</script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+   
+	 <!-- Footer -->
+	 <footer class="text-center">
 
-    <!-- Footer -->
-      <div class="navbar navbar-default navbar-fixed-bottom">
-          <div class="container">
-            <p class="navbar-text pull-left">Crafted with <span class="glyphicon glyphicon-heart"></span> by <a href="https://github.com/r3trd">r3trd</a> & <a href="https://github.com/monsij">monsij</a></p>
-            <a href="https://github.com/monsij/StudentPortal" class="navbar-btn btn-danger btn pull-right">
-            <span class="glyphicon glyphicon-star"></span>  Give us a star on Github</a>
-          </div>
-	  </div>
-    <!-- Footer -->
+			<div class="container-fluid text-center text-md-left">
+					<div class="row">
+					  <div class="col-md-6 mt-md-0 mt-3">
+						<h5 class="text-uppercase">About Us</h5>
+						<p>This portal is meant for students of NIT Durgapur for keeping up-to-date information about academics, placements, internships and all other major updates. <br>
+
+								Students can find all the study materials in this portal. <br>
+								
+								Register yourself to get started.</p>
+			  
+					  </div>
+					  <div class="col-md-4">
+			  
+						  <!-- Links -->
+						  <h5 class="text-uppercase">Important Links</h5>
+							<hr>
+						  <ul class="list-unstyled">
+								<li><a href="https://drive.google.com/file/d/1aA67zonV0B7DFtnlVbDTOWlTUYdei18K/view?usp=sharing" target ="_blank">
+									Academic Calendar
+								</a></li>
+								
+								<li><a href="https://drive.google.com/file/d/1jPSW_JShfYmd7R2CwdhOTMlGHMo2BNeI/view?usp=sharing" target = "_blank">
+									Holidays
+								</a></li>
+								
+								<li><a href="http://14.139.221.18:9001" target ="_blank">
+									Chanakya Portal
+								</a></li>
+								
+								<li><a href="{% url 'blog-contact' %}">
+									Contacts
+								</a></li>
+								
+								<li><a href="{% url 'blog-contributor' %}">
+									Contributors
+								</a></li>
+						  </ul>
+			  
+						</div>
+						<div class="col-md-2">
+		
+							<a style="text-decoration: none" class="clock24" id="tz24-1544552210-cc13072-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsInNob3d0aW1lem9uZSI6IjAiLCJ0eXBlIjoiZCIsImxhbmciOiJlbiJ9" title="time at India" target="_blank" rel="nofollow">India <br> </a>
+							<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+							
+							<div style="color:white;text-align: center;font-size: 14px;">
+								<span><h4 style="margin-bottom:1px;">Your IP:</h4></span>
+								<script type="application/javascript">
+									function getIP(json) {
+										document.write(json.ip);
+									}
+								</script>
+								<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+							</div>
+
+						</div>
+			  
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="text-center">
+
+			<p class="navbar-text">Crafted with <span class="glyphicon glyphicon-heart"></span> by <a href="https://github.com/r3trd">r3trd</a>
+				& <a href="https://github.com/monsij">monsij</a></p>
+			<a href="https://github.com/monsij/StudentPortal" class="navbar-btn btn-danger btn pull-right">
+				<span class="glyphicon glyphicon-star"></span> Give us a star on Github</a>
+		</div>
+		<br<br><br>
+
+	</footer>
+
+
 </body>
+
 </html>

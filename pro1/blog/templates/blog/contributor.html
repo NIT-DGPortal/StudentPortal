@@ -1,32 +1,34 @@
 {% extends "blog/base.html" %}
 {% load static %}
 {% block content %}
+
 <head>
 	{% if title %}
-		<title>{{ post.title }}</title>
+	<title>{{ post.title }}</title>
 	{% else %}
-		<title>StudentPortal:Contributors</title>
+	<title>Contributors</title>
 	{% endif %}
 </head>
-	<h1> Contributors </h1>
-	<br>
-	<style>
-		body{
-		padding-left:5em ;
-		}
-	</style>
+<h1> Contributors </h1>
+<br>
+
+<div class="github-card" data-github="monsij" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="r3trd" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="harry-hov" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="gutsytechster" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="gopavasanth" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="BhanuPrakashNani" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="arpit3018" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="nguptaa" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="Tiyas-13" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="YashviP" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="Aman8817" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="akashgiricse" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="rahulotwani" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="chauhannishh" data-width="240" data-height="300" data-theme="medium"></div>
+<div class="github-card" data-github="udaymewada" data-width="240" data-height="300" data-theme="medium"></div>
 
 
-	<div class="github-card" data-github="monsij" data-width="240" data-height="300" data-theme="medium"></div>
-	<div class="github-card" data-github="r3trd" data-width="240" data-height="300" data-theme="medium"></div>
-	<div class="github-card" data-github="harry-hov" data-width="240" data-height="300" data-theme="medium"></div>
-	<div class="github-card" data-github="Tiyas-13" data-width="240" data-height="300" data-theme="medium"></div>
-	<div class="github-card" data-github="gutsytechster" data-width="240" data-height="300" data-theme="medium"></div>
-	<div class="github-card" data-github="gopavasanth" data-width="240" data-height="300" data-theme="medium"></div>
-	<div class="github-card" data-github="BhanuPrakashNani" data-width="240" data-height="300" data-theme="medium"></div>
-	<div class="github-card" data-github="arpit3018" data-width="240" data-height="300" data-theme="medium"></div>
-	<div class="github-card" data-github="nguptaa" data-width="240" data-height="300" data-theme="medium"></div>
-	<script src="{% static 'blog/jsGit/widget.js' %}"></script>
-
+<script src="{% static 'blog/jsGit/widget.js' %}"></script>
 
 {% endblock content %}
