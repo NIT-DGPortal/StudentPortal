@@ -7,5 +7,66 @@
 		<title>Interviews</title>
 	{% endif %}
 </head>
-	<p> No recent interview updates </p>
+
+<div class="card parent-card">
+  <!-- Card content -->
+  <h2 class="card-header">Internship</h2>
+  {% if internships %}
+      <div style="overflow-y: scroll; max-height:290px;">
+        {% for internship in internships %}
+            <div class="card child-card">
+              <div class="card-body" style="margin: 10px;">
+                <h3 class="card-title">{{ internship.company_name }}</h3>
+                <h5 class="card-text"><strong>Departments open to:</strong>
+                  {% for department in internship.department.all %}
+                      {% if forloop.last %}
+                          {{ department }}
+                      {% else %}
+                          {{ department }},
+                      {% endif %}
+                  {% endfor %}
+                </h5>
+                <h5 class="card-text"><strong>Job Designation:</strong>&nbsp;{{ internship.job_designation }}</h5>
+                <a href="{% url 'internship' internship_id=internship.id %}"><u>More here</u></a>
+              </div>
+            </div>
+        {% endfor %}
+      </div>
+  {% else %}
+      <div class="card-body" style="margin: 10px;">
+        <h4 class="card-title">No internships available at the moment.</h4>
+      </div>
+  {% endif %}
+</div>
+
+<div class="card parent-card" style="margin-top: 30px;">
+  <!-- Card content -->
+  <h2 class="card-header">Placement</h2>
+  {% if placements %}
+      <div  style="overflow-y: scroll; max-height: 240px;">
+        {% for placement in placements %}
+            <div class="card child-card">
+              <div class="card-body" style="margin: 10px;">
+                <h3 class="card-title">{{ placement.company_name }}</h3>
+                <h5 class="card-text"><strong>Departments open to:</strong>
+                  {% for department in placement.department.all %}
+                      {% if forloop.last %}
+                          {{ department }}
+                      {% else %}
+                          {{ department }},
+                      {% endif %}
+                  {% endfor %}
+                </h5>
+                <a href="{% url 'placement' placement_id=placement.id %}"><u>More here</u></a>
+              </div>
+            </div>
+        {% endfor %}
+      </div>
+  {% else %}
+      <div class="card-body" style="margin: 10px;">
+        <h4 class="card-title">No placements available at the moment.</h4>
+      </div>
+  {% endif %}
+</div>
+
 {% endblock content %}

@@ -76,3 +76,25 @@ footer a:hover {
     color: #cce838;
     text-decoration: none;
 }
+
+.child-card{
+    margin: 10px;
+}
+
+.child-card:hover{
+    background-color: #D3D3D3;
+}
+
+.parent-card:hover{
+    ~webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    ~moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+
+.parent-card{
+    border: 1px solid black;
+}
+
+td{
+    font-size: small;
+}
