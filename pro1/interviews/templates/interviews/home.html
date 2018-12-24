@@ -16,7 +16,13 @@
         {% for internship in internships %}
             <div class="card child-card">
               <div class="card-body" style="margin: 10px;">
-                <h3 class="card-title">{{ internship.company_name }}</h3>
+                <a href="{{ internship.form_link }}" target="_blank" class="btn btn-primary" style="float:right;">Form <i class="fa fa-file-text-o"></i></a>
+                <h3 class="card-title" style="display:inline;">{{ internship.company_name }}</h3>
+                {% if internship.status == 'OPEN' %}
+                    <h4 style="display:inline;"><span class="label label-success">{{ internship.get_status_display }}</span></h4>
+                {% else %}
+                    <h4 style="display:inline;"><span class="label label-danger">{{ internship.get_status_display }}</span></h4>
+                {% endif %}
                 <h5 class="card-text"><strong>Departments open to:</strong>
                   {% for department in internship.department.all %}
                       {% if forloop.last %}
@@ -47,7 +53,13 @@
         {% for placement in placements %}
             <div class="card child-card">
               <div class="card-body" style="margin: 10px;">
-                <h3 class="card-title">{{ placement.company_name }}</h3>
+                <a href="{{ placement.form_link }}" target="_blank" class="btn btn-primary" style="float:right;">Form <i class="fa fa-file-text-o"></i></a>
+                <h3 class="card-title" style="display:inline;">{{ placement.company_name }}</h3>
+                {% if placement.status == 'OPEN' %}
+                    <h4 style="display:inline;"><span class="label label-success">{{ placement.get_status_display }}</span></h4>
+                {% else %}
+                    <h4 style="display:inline;"><span class="label label-danger">{{ placement.get_status_display }}</span></h4>
+                {% endif %}
                 <h5 class="card-text"><strong>Departments open to:</strong>
                   {% for department in placement.department.all %}
                       {% if forloop.last %}
