@@ -1,5 +1,10 @@
 from django.db import models
 
+STATUS_CHOICES = (
+    ('OPEN', 'Open'),
+    ('CLOSE', 'Close'),
+)
+
 
 class Department(models.Model):
     depatment_name = models.CharField(max_length=20)
@@ -19,6 +24,9 @@ class Internship(models.Model):
     person_of_contact = models.CharField(max_length=20)
     email_id = models.EmailField()
     phone_no = models.CharField(max_length=12)
+    form_link = models.URLField(default='')
+    status = models.CharField(max_length=5, choices=STATUS_CHOICES,
+                              default='OPEN')
     other_details = models.TextField(default=None, null=True, blank=True)
 
     def __str__(self):
@@ -35,6 +43,9 @@ class Placement(models.Model):
     qualification_needed = models.CharField(max_length=20)
     last_date_to_apply = models.DateField()
     department = models.ManyToManyField(Department)
+    form_link = models.URLField(default='')
+    status = models.CharField(max_length=5, choices=STATUS_CHOICES,
+                              default='OPEN')
     interview_or_test_location = models.TextField()
     additional_documents = models.TextField()
     additional_information = models.TextField(default=None, null=True,
