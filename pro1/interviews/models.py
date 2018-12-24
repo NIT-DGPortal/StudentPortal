@@ -2,7 +2,7 @@ from django.db import models
 
 STATUS_CHOICES = (
     ('OPEN', 'Open'),
-    ('CLOSE', 'Close'),
+    ('CLOSED', 'Closed'),
 )
 
 
@@ -25,7 +25,7 @@ class Internship(models.Model):
     email_id = models.EmailField()
     phone_no = models.CharField(max_length=12)
     form_link = models.URLField(default='')
-    status = models.CharField(max_length=5, choices=STATUS_CHOICES,
+    status = models.CharField(max_length=6, choices=STATUS_CHOICES,
                               default='OPEN')
     other_details = models.TextField(default=None, null=True, blank=True)
 
