@@ -44,7 +44,7 @@ class Placement(models.Model):
     last_date_to_apply = models.DateField()
     department = models.ManyToManyField(Department)
     form_link = models.URLField(default='')
-    status = models.CharField(max_length=5, choices=STATUS_CHOICES,
+    status = models.CharField(max_length=6, choices=STATUS_CHOICES,
                               default='OPEN')
     interview_or_test_location = models.TextField()
     additional_documents = models.TextField()
