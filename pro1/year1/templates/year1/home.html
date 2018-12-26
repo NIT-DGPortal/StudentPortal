@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<head>
+  {% if title %}
+    <title>{{ post.title }}</title>
+  {% else %}
+    <title>StudyZone</title>
+  {% endif %}
+</head>
+  <h1> Welcome First Years! </h1>
+  <h2>This is your Study Zone</h2>
+<p> <a href="year_1_doc/">Here</a> is your sample document</p>
+{% endblock content %}

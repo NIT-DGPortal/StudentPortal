@@ -34,6 +34,7 @@ urlpatterns = [
     path('mail_sent/', user_views.mail_sent, name = 'mail_sent'),
     path('activate/<uidb64>/<token>/', user_views.activate, name='activate'),
     path('', include('blog.urls')),
+    path('year1/', include('year1.urls')),
 ]
 
 

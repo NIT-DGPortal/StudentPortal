@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'interviews.apps.InterviewsConfig',
     'study.apps.StudyConfig',
     'users.apps.UsersConfig',
+    'year1.apps.Year1Config',
     'crispy_forms', # defaults to bootstrap2 --> make it bootstrap4  see line 127
     'blog.apps.BlogConfig',
     'django.contrib.admin',
