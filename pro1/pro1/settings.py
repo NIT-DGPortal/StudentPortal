@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
-# SECURITY WARNING: ke,ep the secret key used in production secret!
+# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'study.apps.StudyConfig',
     'users.apps.UsersConfig',
     'year1.apps.Year1Config',
-    'crispy_forms', # defaults to bootstrap2 --> make it bootstrap4  see line 127
+    'crispy_forms',  # defaults to bootstrap2 --> make it bootstrap4  see line 127
     'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -130,8 +130,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-MEDIA_URL = '/media/' # how we access in the browser
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'  # how we access in the browser
 CRISPY_TEMPLATE_PACK = 'bootstrap4'    # bootstrap changed
 
 LOGIN_REDIRECT_URL = 'blog-home'
