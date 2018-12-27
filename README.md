@@ -98,8 +98,9 @@ We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc
 
 * Configure environment variable using **python-decople**
 
-  
-* Navigate to pro1 and run the following command in your terminal.
+* Navigate to pro1 and rename .env.example to .env
+
+* Run the following command in your terminal.
 
   ```bash
   > python manage.py runserver
