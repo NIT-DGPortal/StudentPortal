@@ -14,7 +14,7 @@
   <a href="#communication">Communication</a> •
   <a href="#license">License</a> •
   <a href="#credits">Credits</a> •
-  <a href="#KWoC">KWoC</a> •
+  <a href="#Past Programs">Past Programs</a> •
 </p>
 
 [![Build Status](https://travis-ci.com/monsij/StudentPortal.svg?branch=master)](https://travis-ci.com/monsij/StudentPortal)
@@ -29,9 +29,6 @@
 [![Gitter](https://img.shields.io/gitter/room/NIT-DGPortal/Lobby.svg?style=flat-square)](https://gitter.im/NIT-DGPortal-main/Lobby)
 [![HitCount](http://hits.dwyl.com/monsij/StudentPortal.svg)](http://hits.dwyl.com/monsij/StudentPortal)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/monsij)
-## KWoC
-![KWoC](https://i.ibb.co/CwBBGYv/kwoc1.png)
-We are more than excited to be a part of [Kharagpur Winter of Code](https://kwoc.kossiitkgp.org/). If you're contributing as a part of this program, we will be having a special mention of such contributors in the repo. Once again, Happy Coding
 ## Key Features
 <ul>
   <li> Based on Python</li>
@@ -127,6 +124,9 @@ Head to [contribution guidelines](https://github.com/monsij/StudentPortal/wiki/C
 ## Communication
 
 All related communications take place [here](https://gitter.im/NIT-DGPortal-main/Lobby)
+## Past Programs
+![KWoC](https://i.ibb.co/CwBBGYv/kwoc1.png)
+We have been a part of [Kharagpur Winter of Code](https://kwoc.kossiitkgp.org/). 
 ## License
 
 Exactly putting we want it to be simple are permissive. Interested contributors are heartedly welcomed. :blush: 
