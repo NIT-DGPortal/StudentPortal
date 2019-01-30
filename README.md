@@ -14,7 +14,7 @@
   <a href="#communication">Communication</a> •
   <a href="#license">License</a> •
   <a href="#credits">Credits</a> •
-  <a href="#Past Programs">Past Programs</a> •
+  <a href="#past-programs">Past Programs</a> •
 </p>
 
 [![Build Status](https://travis-ci.com/monsij/StudentPortal.svg?branch=master)](https://travis-ci.com/monsij/StudentPortal)
