@@ -29,7 +29,6 @@
 [![Gitter](https://img.shields.io/gitter/room/NIT-DGPortal/Lobby.svg?style=flat-square)](https://gitter.im/NIT-DGPortal-main/Lobby)
 [![HitCount](http://hits.dwyl.com/monsij/StudentPortal.svg)](http://hits.dwyl.com/monsij/StudentPortal)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/monsij)
-[![GSoC Heat](https://img.shields.io/badge/GSoC%20Heat-2019-orange.svg)](https://nitdgpos.github.io/gsoc_heat)
 ## Key Features
 <ul>
   <li> Based on Python</li>
