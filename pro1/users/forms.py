@@ -19,7 +19,13 @@ class UserRegisterForm(UserCreationForm):
 
 	def clean_email (self) :
 		data = self.cleaned_data['email']
-		domain = data.split('@')[1]
+		domain = data.split('@')[-1]
 		if domain != 'btech.nitdgp.ac.in' :
 			raise forms.ValidationError('Please make sure that you use college mail address')
+		return data
+		
+	def checkUsername(self) :
+		data = self.cleaned_data['username']
+		if User.objects.filter(username__exact=data).exists():
+			raise forms.ValidationError('Sorry this username is already taken')
 		return data
