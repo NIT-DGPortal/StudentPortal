@@ -42,7 +42,7 @@
 * Start off by forking this repository and cloning it to get your local copy.
 
   ```bash
-  > git clone https://github.com/NIT-DGPortal/portal-main.git 
+  > git clone https://github.com/NIT-DGPortal/StudentPortal.git
   ```
 
 * If you prefer a virtual-environment ([pipenv](https://pipenv.readthedocs.io/) suggested) you should have pip and pipenv installed.
